@@ -37,7 +37,7 @@ const devConfig = () => ({
           'style-loader', 
           {
             loader: 'css-loader',
-            query: {
+            options: {
               modules: true, 
               localIdentName: '[name]_[local]_[hash:base64:5]',
             },
@@ -58,7 +58,7 @@ const prodConfig = () => ({
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
-            query: {
+            options: {
               modules: true, 
               localIdentName: '[name]_[local]_[hash:base64:5]',
             },
